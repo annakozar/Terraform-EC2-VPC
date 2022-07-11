@@ -3,6 +3,13 @@ provider "aws" {
   profile    = "default"
 }
 
+# terraform {
+#   backend "s3" {
+#     bucket = "mybucket"
+#     key    = "path/to/my/key"
+#     region = "us-east-1"
+#   }
+# }
 
 //vpc
 resource "aws_vpc" "main" {
